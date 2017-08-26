@@ -3214,7 +3214,7 @@ function wp_load_image( $file ) {
  * @param int $jpeg_quality Optional, default is 90. Image quality percentage.
  * @return mixed WP_Error on failure. String with new destination path.
  */
-function image_resize( $file, $max_w, $max_h, $crop = false, $suffix = null, $dest_path = null, $jpeg_quality = 90 ) {
+function image_resize( $file, $max_w, $max_h, $crop = false, $suffix = null, $dest_path = null, $jpeg_quality = 100 ) {
 	_deprecated_function( __FUNCTION__, '3.5.0', 'wp_get_image_editor()' );
 
 	$editor = wp_get_image_editor( $file );
