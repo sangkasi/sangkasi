@@ -208,7 +208,7 @@ class WPSEO_Option_Titles extends WPSEO_Option {
 		}
 
 		if ( $post_type_objects_custom !== array() ) {
-			$archive = sprintf( __( '%s', 'wordpress-seo' ), '%%pt_plural%%' );
+			$archive = sprintf( __( '%s Archive', 'wordpress-seo' ), '%%pt_plural%%' );
 			foreach ( $post_type_objects_custom as $pt ) {
 				if ( ! $pt->has_archive ) {
 					continue;
