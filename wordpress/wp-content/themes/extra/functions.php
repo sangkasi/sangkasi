@@ -19,7 +19,7 @@ define( 'EXTRA_PROJECT_TAG_TAX', 'project_tag' );
 define( 'EXTRA_RATING_COMMENT_TYPE', 'rating' );
 
 $et_template_directory = get_template_directory();
-ini_set('display_errors', '1'); ini_set('error_reporting', E_ALL);
+
 // Load Framework
 require $et_template_directory . '/framework/functions.php';
 
@@ -36,10 +36,9 @@ require $et_template_directory . '/includes/ratings.php';
 require $et_template_directory . '/includes/projects.php';
 require $et_template_directory . '/includes/widgets.php';
 require $et_template_directory . '/includes/et-social-share.php';
-ini_set('display_errors', '1'); ini_set('error_reporting', E_ALL);
+
 // Load admin only resources
 if ( is_admin() ) {
-	require $et_template_directory . '/includes/admin/admin.php';
-	require $et_template_directory . '/includes/admin/category.php';
+	require_once $et_template_directory . '/includes/admin/admin.php';
+	require_once $et_template_directory . '/includes/admin/category.php';
 }
-ini_set('display_errors', '1'); ini_set('error_reporting', E_ALL);
